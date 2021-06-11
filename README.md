@@ -34,6 +34,13 @@ The directory `stylegan2` contains the original StyleGAN2 code, with the followi
 
 `stylegan2/nets/` is the location for saving the trained network .pkl files. Stay tuned for our StyleGAN2 network weights, trained on brain MR images and FFHQ dataset images.
 
+The directory `pic_recon` contains the following sub-directories:
+- `pic_recon/src` Stores all the scripts for image reconstruction.
+- `masks_mri` stores the MRI undersampling masks
+- `ground_truths` - images of ground truths
+- `prior_images`- Images and latent-projections of prior images.
+- `results` - stores the results of the reconstruction.
+
 
 
 
