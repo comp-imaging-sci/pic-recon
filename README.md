@@ -14,7 +14,7 @@ University of Illinois at Urbana-Champaign, Urbana, IL - 61801, USA
 
 Additional dependencies that are required for the various reconstruction methods are as follows:
 ### PLS-TV
-- [https://pythonhosted.org/prox_tv/](Prox-TV)
+- [Prox-TV](https://pythonhosted.org/prox_tv/)
   Can be installed via `pip install prox_tv`. In our experience, this works on Linux and Mac, but not on Windows.
   
 ### CSGM and PICGM
