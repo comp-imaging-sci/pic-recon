@@ -18,6 +18,12 @@ Additional dependencies that are required for the various reconstruction methods
   Can be installed via `pip install prox_tv`. In our experience, this works on Linux and Mac, but not on Windows.
   
 ### CSGM and PICGM
-- Cuda toolkit 10.0 (higher versions may work but haven't been tested)
+- [Cuda toolkit 10.0](https://developer.nvidia.com/cuda-toolkit) (higher versions may work but haven't been tested)
 - GCC 7.2+. The code has been tested with GCC 7.2.0
+
+### PICCS
+- [TF-Wavelets](https://github.com/UiO-CS/tf-wavelets) <br />
+  Relevant portions included with this code.
+  
+ 
 
