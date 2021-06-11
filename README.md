@@ -1,9 +1,9 @@
 # Prior image-constrained reconstruction using style-based generative models [ICML 2021] - Tensorflow implementation
 
+**Paper:** https://arxiv.org/abs/2102.12525
+
 Varun A. Kelkar, Mark A. Anastasio <br />
 University of Illinois at Urbana-Champaign, Urbana, IL - 61801, USA
-
-**Paper:** https://arxiv.org/abs/2102.12525
 
 **Contact:** vak2@illinois.edu, maa@illinois.edu
 
