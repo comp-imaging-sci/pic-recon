@@ -47,6 +47,9 @@ The directory `pic_recon` contains the following sub-directories:
 3. Run `bash run_projector.sh` from within `stylegan2/`. The projected images along with their latent representations will be stored in `stylegan2/projected_images/`
 
 ## Performing image reconstructions:
+The ground truth (GT) images can be found in `pic_recon/ground_truths/`. The prior images (PIs) can be found in `pic_recon/prior_images/`. The GTs and the PIs are organized according to `data_type`, which can be either `faces` or `brain`. For the brain images, we provide two example GT-PI pairs. Additional GT-PI pairs can be downloaded from [The Cancer Imaging Archive (TCIA) Brain-Tumor-Progression dataset](https://wiki.cancerimagingarchive.net/display/Public/Brain-Tumor-Progression#3394811983c589667d0448b7be8e7831cbdcefa6). Links to the data use policy can be found in `pic_recon/ground_truths/brain/README.md`. The Shutterstock Collection containing the GT-PI pairs for the face images can be found here: https://www.shutterstock.com/collections/298591136-e81133c6. A Shutterstock license is needed to use these images. The preprocessing steps used are described in our paper.
+
+The scripts for running the various reconstruction algorithms can be found in `pic_recon/src/`.
 For all the reconstruction methods, path to ground truth/prior image, regularization parameters, etc need to be set. For CSGM and PICGM, the network path needs to be correctly set. Some examples along with viable values of regularization are given in the scripts `recon_fista.sh`, `recon_piccs.sh`, `recon_csgm.sh`, and `recon_picgm.sh` respectively for the four reconstruction methods, from inside `pic_recon/src`.
 
 Once the parameters are set (most are already set), run (from inside `pic_recon/src`):
@@ -55,6 +58,7 @@ Once the parameters are set (most are already set), run (from inside `pic_recon/
 - `bash recon_piccs.sh` - For PICCS
 - `bash recon_picgm_extended.sh` For PICGM.
 
+## Citations
 If you find our code useful, please cite our work as
 ```
 @article{kelkar2021prior,
@@ -64,6 +68,7 @@ If you find our code useful, please cite our work as
   year={2021}
 }
 ```
+
 
 
 
