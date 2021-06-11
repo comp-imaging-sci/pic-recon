@@ -47,16 +47,27 @@ The directory `pic_recon` contains the following sub-directories:
 3. Run `bash run_projector.sh` from within `stylegan2/`. The projected images along with their latent representations will be stored in `stylegan2/projected_images/`
 
 ## Performing image reconstructions:
+
+The simplest way to get a recon algorithm `alg` is as follows:
+1. Place the appropriate pretrained StyleGAN2 network `.pkl` file in `stylegan2/nets/`. The current setup uses a StyleGAN2 trained on the [FastMRI initiative database](https://fastmri.med.nyu.edu/) for the MR image study, and one trained on 128x128x3 [FFHQ](https://github.com/NVlabs/ffhq-dataset) images for the face image study. We will provide our pretrained network `.pkl` files soon. Users are free to train their own models and use them. 
+2. Enter `pic_recon/scripts/`.
+3. Specify the correct network pkl path as `network_path`. (applies only to CSGM and PICGM).
+4. Run `bash recon_${alg}.sh` for an algorithm `alg`, where `alg` can be `plstv`, `csgm`, `piccs` or `picgm`.
+
+Further details about the reconstruction are as follows:
+
 The ground truth (GT) images can be found in `pic_recon/ground_truths/`. The prior images (PIs) can be found in `pic_recon/prior_images/`. The GTs and the PIs are organized according to `data_type`, which can be either `faces` or `brain`. For the brain images, we provide two example GT-PI pairs. Additional GT-PI pairs can be downloaded from [The Cancer Imaging Archive (TCIA) Brain-Tumor-Progression dataset](https://wiki.cancerimagingarchive.net/display/Public/Brain-Tumor-Progression#3394811983c589667d0448b7be8e7831cbdcefa6). Links to the data use policy can be found in `pic_recon/ground_truths/brain/README.md`. The Shutterstock Collection containing the GT-PI pairs for the face images can be found here: https://www.shutterstock.com/collections/298591136-e81133c6. A Shutterstock license is needed to use these images. The preprocessing steps used are described in our paper.
 
-The scripts for running the various reconstruction algorithms can be found in `pic_recon/src/`.
-For all the reconstruction methods, path to ground truth/prior image, regularization parameters, etc need to be set. For CSGM and PICGM, the network path needs to be correctly set. Some examples along with viable values of regularization are given in the scripts `recon_fista.sh`, `recon_piccs.sh`, `recon_csgm.sh`, and `recon_picgm.sh` respectively for the four reconstruction methods, from inside `pic_recon/src`.
+All the recon scripts contain the following common arguments:
+- `process` : This is the index of the image to be reconstructed.
+- `data_type` : Can be either `faces` or `brain`.
+- `mask_type` : More generally refers to the forward model. For random Gaussian sensing, this argument takes the form `gaussian_${m_by_n}`. For simulated MRI with random cartesian undersampling, this argument takes the form `mask_rand_${n_by_m}x`. The Gaussian sensing matrices are generated in the code using a fixed seed. The undersampling masks for MRI are located inside `pic_recon/masks_mri/`. 
+- `snr` : Measurement SNR.
+- `gt_filename`: Path to the ground truth.
+- `pi_filename`: (only for PICCS and PICGM) Path to the prior image.
+- Various regularization parameters.
 
-Once the parameters are set (most are already set), run (from inside `pic_recon/src`):
-- `bash recon_fista.sh` - For PLS-TV
-- `bash recon_csgm_w.sh` - For CSGM
-- `bash recon_piccs.sh` - For PICCS
-- `bash recon_picgm_extended.sh` For PICGM.
+The results will be stored in `pic_recon/results/${data_type}/${process}/${algorithm}_${data_type}_${mask_type}_SNR${snr}/`.
 
 ## Citations
 If you find our code useful, please cite our work as
