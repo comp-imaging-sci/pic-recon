@@ -87,6 +87,14 @@ If you find our code useful, please cite our work as
 }
 ```
 
+Data citations
+1. **FastMRI initiative database:** Zbontar, Jure, et al. "fastMRI: An open dataset and benchmarks for accelerated MRI." arXiv preprint arXiv:1811.08839 (2018).
+2. **The Cancer Imaging Archive** Clark, K., Vendt, B., Smith, K., Freymann, J., Kirby, J., Koppel, P., Moore, S., Phillips, S., Maffitt, D., Pringle, M., Tarbox, L., & Prior, F. (2013). The Cancer Imaging Archive (TCIA): Maintaining and Operating a Public Information Repository. Journal of Digital Imaging, 26(6), 1045–1057. https://doi.org/10.1007/s10278-013-9622-7
+3. **TCIA Brain-Tumor-Progression** Schmainda KM, Prah M (2018). Data from Brain-Tumor-Progression. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2018.15quzvnb 
+4. **FFHQ dataset** A Style-Based Generator Architecture for Generative Adversarial Networks
+Tero Karras (NVIDIA), Samuli Laine (NVIDIA), Timo Aila (NVIDIA)
+https://arxiv.org/abs/1812.04948, https://github.com/NVlabs/ffhq-dataset
+
 
 
 
