@@ -165,7 +165,7 @@ def project_real_images_from_npy(network_pkl, data_dir, mode, num_images=100):
 
     for i in range(num_images):
         print('Projecting image %d/%d ...' % (i, num_images))
-        img = np.fromfile(fnames[i], np.float32).reshape(1,1,256,256)
+        img = np.load(fnames[i]).reshape(1,1,256,256)
         img = img - img.min(); img = img / img.max()
         img = 2*img - 1.
         froot = os.path.splitext(os.path.basename(fnames[i]))[0]

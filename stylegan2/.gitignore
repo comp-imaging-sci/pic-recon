@@ -3,14 +3,9 @@ __pycache__/
 **/__pycache__
 **/*.npy
 **/*.pkl
-results
-style_mixing
-projected_images*
-nets
-w_statistics
-condor_logs
-to_be_projected
-worst_linapprox_images
 jacobians*
 jacobians
+style_mixing
+projected_images
+nets
 .vscode

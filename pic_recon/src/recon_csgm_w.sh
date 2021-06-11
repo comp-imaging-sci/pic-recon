@@ -8,7 +8,7 @@ niter=10000
 step=0.5
 lamda_w=0
 
-network_path=../../stylegan2/nets/stylegan2-FastMRIT1T2-config-h.pkl
+network_path=../../stylegan2/nets/stylegan2-CompMRIT1T2-config-f.pkl
 
 gt_filename=../ground_truths/${data_type}/xgt_$process.npy
 savedir=../results/${data_type}/${process}/csgm_${data_type}_${mask_type}_SNR${snr}

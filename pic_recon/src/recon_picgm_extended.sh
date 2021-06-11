@@ -1,8 +1,5 @@
 #!/bin/bash
 
-module load cuda-toolkit/10
-module load gcc/7.2.0
-
 process=0
 data_type=brain # faces or brain
 mask_type=mask_rand_6x # gaussian_0.02, mask_rand_6x, mask_rand_8x
@@ -19,7 +16,7 @@ lamda_w=3e-10
 # brain 12 fold MRI      : p1=3; p2=4; lamda_w=1e-13
 # Different (p1, p2) values may change results. Useful values of p1, p2 lie either in the range [2,5] or in the range [6,10] 
 
-network_path=../../stylegan2/nets/stylegan2-FastMRIT1T2-config-h.pkl
+network_path=../../stylegan2/nets/stylegan2-CompMRIT1T2-config-f.pkl
 
 gt_filename=../ground_truths/${data_type}/xgt_$process.npy
 pi_filename=../prior_images/${data_type}/xpi_$process.npy
