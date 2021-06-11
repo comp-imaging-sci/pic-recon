@@ -11,6 +11,7 @@ University of Illinois at Urbana-Champaign, Urbana, IL - 61801, USA
 - Linux/Unix-based systems recommended. The code hasn't been tested on Windows.
 - 64 bit Python 3.6+. The code has been tested with Python 3.7.4 installed via Anaconda
 - Tensorflow 1.14/1.15. The code has been tested with Tensorflow 1.14. Tensorflow 2+ is not supported.
+- [imageio](https://imageio.readthedocs.io/en/stable/) - Install via `pip` or `conda`.
 
 Additional dependencies that are required for the various reconstruction methods are as follows:
 ### PLS-TV
