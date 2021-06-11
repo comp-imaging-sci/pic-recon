@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ../src/
+
 process=0
 data_type=brain # faces or brain
 mask_type=mask_rand_6x # gaussian_0.02, mask_rand_6x, mask_rand_8x
