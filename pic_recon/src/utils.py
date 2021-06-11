@@ -1,3 +1,9 @@
+""" Copyright (c) 2021, Varun A. Kelkar, Computational Imaging Science Lab @ UIUC.
+
+This work is made available under the MIT License.
+Contact: vak2@illinois.edu
+"""
+
 import json
 try:
     import tensorflow as tf
