@@ -9,8 +9,10 @@ University of Illinois at Urbana-Champaign, Urbana, IL - 61801, USA
 
 **Abstract:** Obtaining a useful estimate of an object from highly incomplete imaging measurements remains a holy grail of imaging science. Deep learning methods have shown promise in learning object priors or constraints to improve the conditioning of an ill-posed imaging inverse problem. In this study, a framework for estimating an object of interest that is semantically related to a known prior image, is proposed. An optimization problem is formulated in the disentangled latent space of a style-based generative model, and semantically meaningful constraints are imposed using the disentangled latent representation of the prior image. Stable recovery from incomplete measurements with the help of a prior image is theoretically analyzed. Numerical experiments demonstrating the superior performance of our approach as compared to related methods are presented
 
+<p align="center">
 <img src="./pic_recon/docs/face_recons_paper.png" alt="Face image reconstruction" width="500"/>
-![MRI image reconstruction](./pic_recon/docs/brain_recon_images_paper.png)
+<img src="./pic_recon/docs/brain_recon_images_paper.png" alt="MRI image reconstruction" width="1000"/>
+</p>
 
 ## System Requirements
 - Linux/Unix-based systems recommended. The code hasn't been tested on Windows.
