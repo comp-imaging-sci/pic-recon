@@ -83,8 +83,7 @@ All the recon scripts contain the following common arguments:
 
 The results will be stored in `pic_recon/results/${data_type}/${process}/${algorithm}_${data_type}_${mask_type}_SNR${snr}/`.
 
-## Citations
-If you find our code useful, please cite our work as
+## Citation
 ```
 @article{kelkar2021prior,
   title={Prior Image-Constrained Reconstruction using Style-Based Generative Models},
