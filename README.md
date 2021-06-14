@@ -1,4 +1,4 @@
-# Prior image-constrained reconstruction using style-based generative models [ICML 2021] - Tensorflow implementation
+# Prior image-constrained reconstruction using style-based generative models - Tensorflow implementation
 
 ### Paper: https://arxiv.org/abs/2102.12525
 
