@@ -3,7 +3,7 @@
 ### Authors: Varun A. Kelkar and Mark A. Anastasio.
 University of Illinois at Urbana-Champaign, Urbana, IL - 61801, USA.
 
-The trained weights can be found at `https://databank.illinois.edu/datasets/IDB-4499850`.
+The trained weights can be found at https://databank.illinois.edu/datasets/IDB-4499850.
 The repository contains the network weights for StyleGAN2 [1] models trained on the following data:
 1) 200676 T1 and T2 weighted MR brain images from the FastMRI Initiative Database [2] and 866 T1 and T2 weighted MR brain images from the TCIA Brain Tumor Progression dataset [3,4]. The output image size is 256x256. 
     - Name of the weights file: `stylegan2-FastMRIT1T2-config-h.pkl`
