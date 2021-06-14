@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../src/
+cd ../pic_recon/src/
 
 process=0
 data_type=brain # faces or brain
@@ -15,10 +15,10 @@ lamda=0.052
 # brain  6 fold MRI      : 0.052
 # brain 12 fold MRI      : 0.07
 
-savedir=../results/${data_type}/${process}/fista_${data_type}_${mask_type}_SNR${snr}
+savedir=../results/${data_type}/${process}/plstv_${data_type}_${mask_type}_SNR${snr}
 gt_filename=../ground_truths/${data_type}/xgt_$process.npy
 
-fileroot=xest_fista_${mask_type}_step${step}_tv${lamda}_${niter}_${snr}SNR_${process}
+fileroot=xest_plstv_${mask_type}_step${step}_tv${lamda}_${niter}_${snr}SNR_${process}
 
 mkdir -p $savedir
 

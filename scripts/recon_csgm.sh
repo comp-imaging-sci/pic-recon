@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ../src/
+cd ../pic_recon/src/
 
 process=0
 data_type=brain # faces or brain
