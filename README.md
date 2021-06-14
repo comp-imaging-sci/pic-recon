@@ -65,7 +65,7 @@ StyleGAN2 network weights, trained on brain MR images and FFHQ dataset images ca
 
 The simplest way to get a recon algorithm `alg` is as follows:
 1. Download the appropriate StyleGAN2 weights. For brain images, use <br /> ```bash scripts/get_network_weights.sh CompMRIT1T2```.<br /> For face images, use <br /> ```bash scripts/get_network_weights.sh FFHQ```. <br /> The weights are stored in `stylegan2/nets/`
-3. Specify the correct network pkl path as `network_path`. The correct one for brain images is already specified. (applies only to CSGM and PICGM).
+3. Specify the correct network pkl path as `network_path` in `scripts/recon_${alg}.sh`. The correct one for brain images is already specified. (applies only to CSGM and PICGM).
 4. Run <br />```bash scripts/recon_${alg}.sh``` <br> for an algorithm `alg`, where `alg` can be `plstv`, `csgm`, `piccs` or `picgm`.
 
 ### Further details:
