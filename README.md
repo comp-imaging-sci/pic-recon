@@ -58,15 +58,15 @@ StyleGAN2 network weights, trained on brain MR images and FFHQ dataset images ca
 
 ## Projecting an image onto the latent space of StyleGAN2
 1. Make sure `cuda-toolkit/10` and `gcc/7.2+` are loaded.
-2. Download StyleGAN2 weights, for example ```bash scripts/get_network_weights.sh FastMRIT1T2```.
+2. Download StyleGAN2 weights, for example <br /> ```bash scripts/get_network_weights.sh FastMRIT1T2```.
 3. Run `bash scripts/run_projector.sh`. If you wish, you may set `network` inside `run_projector.sh` to the path to the StyleGAN2 network `.pkl` you want. The image size is 256x256x1 for brain images, and 128x128x3 for face images. The projected images along with their latent representations will be stored in `stylegan2/projected_images/`
 
 ## Performing image reconstructions:
 
 The simplest way to get a recon algorithm `alg` is as follows:
-1. Download the appropriate StyleGAN2 weights. For brain images, use ```bash scripts/get_network_weights.sh CompMRIT1T2```. For face images, use ```bash scripts/get_network_weights.sh FFHQ```. The weights are stored in `stylegan2/nets/`
+1. Download the appropriate StyleGAN2 weights. For brain images, use <br /> ```bash scripts/get_network_weights.sh CompMRIT1T2```.<br /> For face images, use <br /> ```bash scripts/get_network_weights.sh FFHQ```. <br /> The weights are stored in `stylegan2/nets/`
 3. Specify the correct network pkl path as `network_path`. The correct one for brain images is already specified. (applies only to CSGM and PICGM).
-4. Run `bash scripts/recon_${alg}.sh` for an algorithm `alg`, where `alg` can be `plstv`, `csgm`, `piccs` or `picgm`.
+4. Run <br />```bash scripts/recon_${alg}.sh``` <br> for an algorithm `alg`, where `alg` can be `plstv`, `csgm`, `piccs` or `picgm`.
 
 ### Further details:
 
