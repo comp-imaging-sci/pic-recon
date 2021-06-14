@@ -31,8 +31,7 @@ Additional dependencies that are required for the various reconstruction methods
 - GCC 7.2+. The code has been tested with GCC 7.2.0
 
 #### PICCS
-- [TF-Wavelets](https://github.com/UiO-CS/tf-wavelets) <br />
-  Relevant portions included with this code.
+- [TF-Wavelets](https://github.com/UiO-CS/tf-wavelets): Relevant portions included with this code.
   
 ## Directory structure
 The directory `scripts` contains the top level scripts:
