@@ -55,7 +55,7 @@ The directory `pic_recon` contains the following sub-directories:
 - `results` - stores the results of the reconstruction.
 
 ## Pretrained StyleGAN2 weights
-StyleGAN2 network weights, trained on brain MR images and FFHQ dataset images can be found here : `https://databank.illinois.edu/datasets/IDB-4499850`. They can be downloaded using `scripts/get_network_weights.sh`. More information can be found in `PRETRAINED_WEIGHTS.md`. 
+StyleGAN2 network weights, trained on brain MR images and FFHQ dataset images can be found here : `https://databank.illinois.edu/datasets/IDB-4499850`. They can be downloaded using `scripts/get_network_weights.sh`. More information can be found in `TRAINED_WEIGHTS_INFO.md`. 
 
 ## Projecting an image onto the latent space of StyleGAN2
 1. Make sure `cuda-toolkit/10` and `gcc/7.2+` are loaded.
